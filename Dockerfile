@@ -15,7 +15,7 @@ RUN apt-get update -q \
       mercurial \
       subversion \
       wget \
-      && apt-get clean
+      && apt-get clean \
       && rm -rf /var/lib/apt/lists/*
 
 RUN wget \
