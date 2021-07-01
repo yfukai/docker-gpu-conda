@@ -23,4 +23,5 @@ RUN wget \
     && mkdir /root/.conda \
     && bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/miniconda3 \
     && rm -f Miniconda3-latest-Linux-x86_64.sh 
-
+    
+RUN conda install -c conda-forge mamba
