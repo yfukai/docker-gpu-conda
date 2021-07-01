@@ -1,8 +1,6 @@
 FROM nvidia/cuda:10.2-cudnn8-devel-ubuntu18.04
 
 ENV PATH="/opt/miniconda3/bin:${PATH}"
-ARG PATH="/opt/miniconda3/bin:${PATH}"
-ENV JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
 
 RUN apt-get update -q \
       && apt-get install -q -y \
